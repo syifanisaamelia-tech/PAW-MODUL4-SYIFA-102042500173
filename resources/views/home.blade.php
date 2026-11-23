@@ -101,7 +101,7 @@
             <h1 class="fw-bold">Katalog Koleksi Buku</h1>
             <p class="text-muted">Temukan dan pinjam buku referensi perkuliahan terbaikmu</p>
 
-            {{-- TODO 10: Lengkapi form pencarian, filter status/penerbit, dan sorting di bawah ini --}}
+            {{-- TODO 10 Form Pencarian, Filter Status/Penerbit, dan Sorting --}}
             <div class="row justify-content-center mt-4">
                 <div class="col-lg-11">
                     <form action="{{ url()->current() }}" method="GET" class="card shadow-sm border-0 p-3 bg-light text-start">

@@ -29,7 +29,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout')->middl
 // 2. ADMIN ROUTES
 // ============================================================
 // TODO: Tambahkan proteksi middleware 'role:admin' pada grup rute admin di bawah ini
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'role:admin'])->group(function () {
 
     // Dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
